@@ -22,7 +22,7 @@ import java.io.StringWriter;
 @EnableScheduling
 public class Application {
     @Autowired
-    private RabbitTemplate rabbitTemplate;
+    private RabbitTemplate rabbittemplate;
 
 
     public static void main(String[] args) {
@@ -64,7 +64,7 @@ public class Application {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        rabbitTemplate.convertAndSend("example-777", "", writer.toString());
+        rabbittemplate.convertAndSend("example-777", "", writer.toString());
     }
 
 
